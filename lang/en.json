@@ -1,0 +1,390 @@
+{
+  "_説明": "英語の文言です。左側（\"home\" など）は変えずに、右側の文章だけを直してください。",
+  "meta": {
+    "htmlLang": "en",
+    "langName": "English",
+    "langShort": "EN",
+    "ogLocale": "en_US",
+    "siteName": "The Akiya Caretaker",
+    "siteNameSub": "Minobordo Inc.",
+    "titleSep": " | ",
+    "colon": ": "
+  },
+  "seo": {
+    "home": "Own a home in Japan, from Vietnam. Mainly older detached houses, plus condominiums, land, shops, warehouses and offices. Buy and manage property in Japan while you stay in Vietnam. Consultation in Vietnamese.",
+    "flow": "The steps for someone living in Vietnam to acquire property in Japan, with the documents, costs and taxes involved.",
+    "services": "Services of The Akiya Caretaker, from finding a house to buying, managing and selling it.",
+    "properties": "Investment properties in Japan: older detached houses, plus condominiums, land, shops, warehouses and offices. Filter by type, area, price and yield.",
+    "about": "Meet Imura and Huong. Caretakers you can see will look after your house in Japan.",
+    "contact": "Consultation in Vietnamese, Japanese or English. Free of charge."
+  },
+  "nav": {
+    "home": "Home",
+    "flow": "Process & costs",
+    "services": "Services",
+    "properties": "Properties",
+    "about": "About us",
+    "contact": "Contact",
+    "menu": "Menu",
+    "lang": "Language"
+  },
+  "common": {
+    "ctaProperties": "View properties",
+    "ctaConsult": "Free consultation",
+    "ctaConsultSub": "Available in Vietnamese",
+    "sampleBadge": "Sample",
+    "sampleNote": "This is a fictional property for testing the display. It is not a real listing.",
+    "confirming": "Being confirmed",
+    "estimate": "Quoted individually",
+    "readMore": "Details",
+    "back": "Back to list",
+    "videoPending": "The video is coming soon.",
+    "playVideo": "Watch the video"
+  },
+  "home": {
+    "heroEyebrow": "For investors in Vietnam",
+    "heroTitle": "Own a home in Japan, from Vietnam.",
+    "heroLead": "Mainly older detached houses, plus condominiums, land and commercial space. Buy and manage property in Japan while you stay in Vietnam. A caretaker you can trust is in Japan on your behalf.",
+    "videoTitle": "A Japanese husband and a Vietnamese wife. Together, we look after your home in Japan.",
+    "videoText": "It is natural to feel uneasy about owning property in Japan. You may not know the language, the procedures, or whom to trust. The two of us will answer each of those concerns, one by one.",
+    "diagramTitle": "What The Akiya Caretaker does",
+    "diagramLead": "We stand between you in Vietnam and your house in Japan.",
+    "diagram": {
+      "investor": "You",
+      "investorSub": "Vietnam",
+      "us": "The Akiya Caretaker",
+      "usSub": "Imura & Huong (Japan)",
+      "pros": "Partner specialists",
+      "prosSub": "Licensed real estate agent, judicial scrivener, tax accountant",
+      "home": "Your house in Japan",
+      "homeSub": "Buy · Manage · Sell",
+      "arrow1": "Consult in Vietnamese",
+      "arrow2": "Arrange procedures",
+      "arrow3": "Manage · Inspect"
+    },
+    "pointsTitle": "Three reasons to feel secure",
+    "points": [
+      {
+        "no": "01",
+        "title": "In your own language",
+        "text": "Huong, who is Vietnamese, handles interpreting, translation and explanations. You can check the contract in Vietnamese."
+      },
+      {
+        "no": "02",
+        "title": "Caretakers you can see",
+        "text": "Imura and Huong handle on-site inspections, tenant communication, building checks and property-tax procedures. You always know who is looking after your house."
+      },
+      {
+        "no": "03",
+        "title": "From start to finish",
+        "text": "We support you continuously, from finding a house to buying, managing and selling it. Sales and rental brokerage are handled by our licensed partner agent."
+      }
+    ],
+    "latestTitle": "Properties",
+    "latestLead": "Mainly older detached houses, plus condominiums, land, shops, warehouses and offices.",
+    "latestMore": "View all properties",
+    "closingTitle": "Start with a conversation",
+    "closingText": "You do not need to have chosen a house yet. Ask us anything about property in Japan, in Vietnamese. Consultation is free.",
+    "duoFromLeft": "From left:"
+  },
+  "flow": {
+    "title": "Process & costs",
+    "lead": "These are the steps for someone living in Vietnam to acquire a house in Japan. We show you all the documents and costs up front.",
+    "stepsTitle": "Eight steps to ownership",
+    "steps": [
+      {
+        "no": "01",
+        "title": "Choose a property",
+        "text": "Browse properties on this site and consult us online."
+      },
+      {
+        "no": "02",
+        "title": "On-site inspection",
+        "text": "Imura and Huong visit the house and share its condition with photos and videos."
+      },
+      {
+        "no": "03",
+        "title": "Offer & price negotiation",
+        "text": "Our partner agent handles the purchase offer and negotiation. We attend and explain everything in Vietnamese."
+      },
+      {
+        "no": "04",
+        "title": "Prepare documents",
+        "text": "You prepare the documents listed below. We explain how, in Vietnamese."
+      },
+      {
+        "no": "05",
+        "title": "Sales contract",
+        "text": "The contract is signed in the presence of the licensed agent. Huong interprets."
+      },
+      {
+        "no": "06",
+        "title": "Payment",
+        "text": "We explain the payment procedure individually for each property."
+      },
+      {
+        "no": "07",
+        "title": "Ownership registration",
+        "text": "A judicial scrivener registers the house in your name."
+      },
+      {
+        "no": "08",
+        "title": "Handover & management",
+        "text": "You receive the keys and management begins. From here, we look after your house in Japan."
+      }
+    ],
+    "docsTitle": "Documents required",
+    "docsLead": "For Vietnamese nationals living in Vietnam.",
+    "docs": [
+      {
+        "name": "Passport",
+        "text": "Used to confirm your identity."
+      },
+      {
+        "name": "Proof of address",
+        "text": "A document showing where you live in Vietnam."
+      },
+      {
+        "name": "Affidavit · Signature certificate",
+        "text": "Issued by the Embassy of Vietnam in Japan or a notary office in Vietnam. It replaces the Japanese seal certificate."
+      },
+      {
+        "name": "Power of attorney",
+        "text": "Used when you cannot come to Japan, to entrust the procedures to someone else."
+      },
+      {
+        "name": "Acquisition report",
+        "text": "When a person living abroad acquires property in Japan, a report to the government may be required."
+      }
+    ],
+    "docsNote": "The exact documents will be confirmed with our partner agent and judicial scrivener, and explained for each property.",
+    "costTitle": "Costs up to acquisition",
+    "costs": [
+      {
+        "name": "Property price",
+        "text": "The amount paid to the seller."
+      },
+      {
+        "name": "Brokerage fee",
+        "text": "Paid to our partner agent."
+      },
+      {
+        "name": "Registration tax",
+        "text": "Tax on registering the change of ownership."
+      },
+      {
+        "name": "Real estate acquisition tax",
+        "text": "A one-time tax on acquiring the house."
+      },
+      {
+        "name": "Judicial scrivener fee",
+        "text": "The fee for the registration procedure."
+      },
+      {
+        "name": "Stamp duty",
+        "text": "Tax on the sales contract."
+      },
+      {
+        "name": "Translation · notarization",
+        "text": "Costs of translating and notarizing documents."
+      },
+      {
+        "name": "Our support fee",
+        "text": "For inspection, interpreting and procedural support."
+      }
+    ],
+    "costNote": "Amounts vary by property. After consulting with you, we provide a quote for each property.",
+    "afterTitle": "Costs after ownership",
+    "after": [
+      {
+        "name": "Fixed asset tax",
+        "text": "Paid once a year. We handle the procedure on your behalf as your \"tax agent\"."
+      },
+      {
+        "name": "Management fee",
+        "text": "Our fee for building checks, tenant communication and similar work."
+      },
+      {
+        "name": "Repairs",
+        "text": "As needed, depending on the building's condition."
+      }
+    ],
+    "taxNote": "Tax treatment depends on where you live and on the property. We confirm with a tax accountant and explain individually. Rules may change, so please check the latest information with the relevant authorities."
+  },
+  "services": {
+    "title": "Services",
+    "lead": "We support you continuously, from finding a house to selling it.",
+    "items": [
+      {
+        "title": "Property information",
+        "text": "We introduce properties suited to investment: mainly older detached houses, plus condominiums, land, shops, warehouses and offices. We can also suggest properties suitable as housing for foreign workers."
+      },
+      {
+        "title": "On-site inspection",
+        "text": "Imura and Huong visit the house and report its condition with photos and videos."
+      },
+      {
+        "title": "Purchase support",
+        "text": "We attend the offer and negotiation, and explain the contract in Vietnamese."
+      },
+      {
+        "title": "Tax agent",
+        "text": "On behalf of owners living abroad, we handle fixed asset tax procedures."
+      },
+      {
+        "title": "Rental management",
+        "text": "We communicate with tenants and inspect the building. Tenant recruitment is done by our partner agent."
+      },
+      {
+        "title": "Sales support",
+        "text": "When you want to sell, we support you until the sale is complete."
+      }
+    ],
+    "partnerTitle": "About real estate brokerage",
+    "partnerText": "Brokerage for property sales and rentals is carried out by our licensed partner real estate agent. We act as your point of contact and coordinate the procedures."
+  },
+  "props": {
+    "title": "Properties",
+    "lead": "Investment properties in Japan. Besides older detached houses, we also handle condominiums, land, shops, warehouses and offices.",
+    "filterArea": "Area",
+    "filterPrice": "Price",
+    "filterYield": "Yield",
+    "filterType": "Type",
+    "filterTag": "Use",
+    "all": "All",
+    "areas": {
+      "aichi": "Aichi",
+      "mie": "Mie",
+      "gifu": "Gifu",
+      "shizuoka": "Shizuoka"
+    },
+    "types": {
+      "house": "Detached house",
+      "mansion": "Condominium",
+      "land": "Land",
+      "warehouse": "Warehouse",
+      "shop": "Shop",
+      "office": "Office"
+    },
+    "tags": {
+      "staffHousing": "Housing for foreign workers"
+    },
+    "priceLabels": {
+      "u300": "Up to ¥3M",
+      "300_1000": "¥3M–10M",
+      "1000_3000": "¥10M–30M",
+      "o3000": "¥30M and up"
+    },
+    "yieldBands": [
+      {
+        "key": "8",
+        "label": "8% and up"
+      },
+      {
+        "key": "10",
+        "label": "10% and up"
+      }
+    ],
+    "hitsBefore": "",
+    "hitsAfter": "properties",
+    "empty": "No properties match. Please change the filters.",
+    "none": "There are no properties to show right now. Tell us what you are looking for and we will search for you.",
+    "noPhoto": "Photos coming soon",
+    "labels": {
+      "type": "Type",
+      "city": "Location",
+      "price": "Price",
+      "land": "Land area",
+      "building": "Floor area",
+      "built": "Year built",
+      "layout": "Layout",
+      "structure": "Structure",
+      "station": "Access",
+      "yield": "Estimated yield",
+      "status": "Current status",
+      "rebuild": "Rebuilding"
+    },
+    "units": {
+      "sqm": "m²",
+      "yen": "yen"
+    },
+    "vndPrefix": "approx.",
+    "vndNote": "VND amounts are for reference only",
+    "detail": {
+      "photos": "Photos",
+      "specs": "Overview",
+      "map": "Map",
+      "comment": "A note from the caretaker",
+      "video": "Video",
+      "inquire": "Ask about this property",
+      "inquireSub": "Available in Vietnamese",
+      "videoTalk": "The caretakers' commentary",
+      "videoTalkNote": "Imura and Huong go through the listing and talk about both the good points and the concerns.",
+      "videoVisit": "On-site inspection",
+      "videoVisitNote": "We visited the property and filmed the building and its surroundings."
+    },
+    "badgeVisited": "Inspected on site"
+  },
+  "about": {
+    "title": "About us",
+    "lead": "Caretakers you can see will look after your house in Japan.",
+    "whyTitle": "In our own words: why you can trust us",
+    "people": [
+      {
+        "key": "imura",
+        "name": "Minoru Imura",
+        "role": "Representative",
+        "text": "Born in 1960 in Obu, Aichi. I still run a restaurant and a guesthouse. I started working with foreign talent in 2018, and Vietnam is the country I visit most often each year. I am here in Japan, and I will look after your house with my own eyes."
+      },
+      {
+        "key": "huong",
+        "name": "Huong",
+        "role": "Interpreter · Translator · Management",
+        "text": "Born in Hanoi, Vietnam. Huong first came to Japan as a technical intern trainee and has also lived in Poland and the Czech Republic. With the motto “connecting Vietnam and Japan,” she gives attentive support from the first meeting right through to the day itself, so that everything moves forward without language worries. She now lives between Japan and Vietnam with her husband."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Free consultation",
+    "lead": "Consultation in Vietnamese, Japanese or English. You do not need to have chosen a house yet.",
+    "formTitle": "Consultation form",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "tel": "Phone (Zalo)",
+      "language": "Preferred language",
+      "message": "Your question",
+      "messagePlaceholder": "e.g. I am looking for a house with rental income, around ¥3 million.",
+      "required": "Required",
+      "send": "Send",
+      "sending": "Sending…",
+      "ok": "Sent. Thank you. We will reply within 2 business days.",
+      "ng": "Could not send. Please contact us by email.",
+      "missing": "Please enter your name, email and question.",
+      "badEmail": "Please check your email address.",
+      "privacy": "Your information is used only to contact you and answer your question.",
+      "propertyPrefix": "Property ID"
+    },
+    "languages": {
+      "vi": "Vietnamese",
+      "ja": "Japanese",
+      "en": "English"
+    },
+    "messengersTitle": "Contact us on a messaging app",
+    "directTitle": "Phone · Email",
+    "telLabel": "Phone",
+    "mailLabel": "Email",
+    "addressLabel": "Address"
+  },
+  "footer": {
+    "disclaimerTitle": "Please note",
+    "disclaimer": "The information on this site is one of several materials to help you make an investment decision. The final decision is your own responsibility. Brokerage for property sales and rentals is carried out by our licensed partner real estate agent. Tax and legal information may change, so please check the latest details with a specialist or the relevant authorities.",
+    "partnerLabel": "Partner real estate agent",
+    "operator": "Operated by"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The URL may have changed, or the page no longer exists.",
+    "back": "Back to home"
+  }
+}

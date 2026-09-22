@@ -1,0 +1,27 @@
+<!-- 物件カード。トップと物件一覧で共用します -->
+<a class="pcard" href="{{href}}"
+   data-area="{{area}}" data-type="{{type}}" data-tags="{{tagsAttr}}"
+   data-price="{{price}}" data-yield="{{yieldPercent}}">
+  <div class="pcard__ph">
+    {{#cover}}<img src="{{cover}}" alt="" loading="lazy">{{/cover}}
+    {{^cover}}<div class="noimg"><span>{{noPhoto}}</span></div>{{/cover}}
+    {{#sample}}<span class="badge badge--sample">{{sampleBadge}}</span>{{/sample}}
+  </div>
+  <div class="pcard__b">
+    <p class="pcard__meta">
+      {{#visited}}<span class="pvisit">{{badgeVisited}}</span>{{/visited}}
+      {{#typeLabel}}<span class="ptype">{{typeLabel}}</span>{{/typeLabel}}
+      {{#tagList}}<span class="ptag">{{label}}</span>{{/tagList}}
+    </p>
+    <p class="pcard__city">{{city}}</p>
+    <p class="pcard__price">{{priceText}}</p>
+    {{#vndText}}<p class="pcard__vnd">{{vndText}}</p>{{/vndText}}
+    <dl class="pcard__spec">
+      {{#landText}}<div><dt>{{labels.land}}</dt><dd>{{landText}}</dd></div>{{/landText}}
+      {{#buildingText}}<div><dt>{{labels.building}}</dt><dd>{{buildingText}}</dd></div>{{/buildingText}}
+      {{#builtText}}<div><dt>{{labels.built}}</dt><dd>{{builtText}}</dd></div>{{/builtText}}
+      {{#yieldText}}<div><dt>{{labels.yield}}</dt><dd class="hl">{{yieldText}}</dd></div>{{/yieldText}}
+    </dl>
+    <p class="pcard__station">{{station}}</p>
+  </div>
+</a>

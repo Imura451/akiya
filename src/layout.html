@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="{{t.meta.htmlLang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{pageTitle}}</title>
+<meta name="description" content="{{pageDesc}}">
+{{#noindex}}<meta name="robots" content="noindex">{{/noindex}}
+<link rel="canonical" href="{{canonical}}">
+
+<!-- 同じページの別の言語版。検索エンジンに、言語ごとのページがあることを伝えます -->
+{{#alternates}}<link rel="alternate" hreflang="{{hreflang}}" href="{{href}}">
+{{/alternates}}<link rel="alternate" hreflang="x-default" href="{{siteUrl}}">
+
+<!-- LINE・Zalo・Facebook などで共有したときの表示 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{t.meta.siteName}}">
+<meta property="og:title" content="{{pageTitle}}">
+<meta property="og:description" content="{{pageDesc}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{t.meta.ogLocale}}">
+<meta property="og:image" content="{{ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- 文字。ベトナム語と英語は Noto Sans、日本語は Noto Sans JP で表示します。
+     Noto Sans JP だけだと、ベトナム語の声調記号の一部が欠けるためです -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="{{root}}assets/style.css">
+<link rel="icon" href="{{root}}assets/icon.svg" type="image/svg+xml">
+</head>
+<body class="lang-{{lang}} page-{{pageKey}}">
+
+<a class="skip" href="#main">{{t.nav.home}}</a>
+
+<!-- 日本とベトナムの国旗の赤。日越の架け橋を表す細い線です -->
+<div class="flagline" aria-hidden="true"></div>
+
+<header class="head">
+  <div class="wrap head__in">
+    <a class="brand" href="{{root}}{{lang}}/index.html">
+      <img src="{{root}}assets/icon.svg" width="36" height="36" alt="">
+      <span class="brand__text">
+        <b>{{t.meta.siteName}}</b>
+        <small>{{t.meta.siteNameSub}}</small>
+      </span>
+    </a>
+
+    <nav class="langs" aria-label="{{t.nav.lang}}">
+      {{#langLinks}}<a href="{{href}}" hreflang="{{code}}" lang="{{code}}" data-lang="{{code}}"
+         class="langs__a{{#current}} is-current{{/current}}"{{#current}} aria-current="true"{{/current}}>{{short}}</a>{{/langLinks}}
+    </nav>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav">
+      <span class="menu-btn__bar" aria-hidden="true"></span>
+      <span class="menu-btn__label">{{t.nav.menu}}</span>
+    </button>
+
+    <nav class="gnav" id="gnav" aria-label="{{t.nav.menu}}">
+      <ul>
+        {{#navItems}}<li><a href="{{href}}"{{#current}} class="is-current" aria-current="page"{{/current}}>{{label}}</a></li>
+        {{/navItems}}
+      </ul>
+      <a class="btn btn--cta gnav__cta" href="{{root}}{{lang}}/contact.html">{{t.nav.contact}}</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{&body}}
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">{{t.meta.siteName}}</p>
+        <p class="foot__sub">{{t.meta.siteNameSub}}</p>
+        <p>
+          {{zipShown}}{{address}}<br>
+          {{t.contact.telLabel}} <a href="tel:{{telHref}}">{{telShown}}</a><br>
+          {{t.contact.mailLabel}} <a href="mailto:{{company.mail}}">{{company.mail}}</a>
+        </p>
+        <p class="foot__partner">
+          {{t.footer.partnerLabel}}{{t.meta.colon}}
+          {{#partner.name}}{{partner.name}}（{{partner.license}}）{{/partner.name}}
+          {{^partner.name}}{{t.common.confirming}}{{/partner.name}}
+        </p>
+      </div>
+      <div>
+        <ul class="foot__nav">
+          {{#footerItems}}<li><a href="{{href}}">{{label}}</a></li>
+          {{/footerItems}}
+        </ul>
+        <p class="foot__langs">
+          {{#langLinks}}<a href="{{href}}" hreflang="{{code}}" lang="{{code}}" data-lang="{{code}}">{{name}}</a>{{/langLinks}}
+        </p>
+      </div>
+    </div>
+
+    <div class="foot__note">
+      <p><b>{{t.footer.disclaimerTitle}}</b></p>
+      <p>{{t.footer.disclaimer}}</p>
+    </div>
+    <p class="foot__copy">&copy; {{year}} {{t.meta.siteNameSub}}</p>
+  </div>
+</footer>
+
+<script>
+  /* ページから JavaScript に渡す値 */
+  window.AKIYA = {
+    lang: "{{lang}}",
+    formEndpoint: "{{formEndpoint}}",
+    text: {{&jsText}}
+  };
+</script>
+<script src="{{root}}assets/main.js" defer></script>
+</body>
+</html>

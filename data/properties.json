@@ -1,0 +1,208 @@
+[
+  {
+    "id": "sample-01",
+    "sample": true,
+    "published": true,
+    "type": "house",
+    "tags": [],
+    "city": {
+      "ja": "愛知県大府市",
+      "vi": "Thành phố Obu, tỉnh Aichi",
+      "en": "Obu City, Aichi"
+    },
+    "area": "aichi",
+    "price": 3800000,
+    "landArea": 120.5,
+    "buildingArea": 85.2,
+    "builtYear": 1978,
+    "layout": "4DK",
+    "structure": {
+      "ja": "木造2階建て",
+      "vi": "Nhà gỗ 2 tầng",
+      "en": "2-story wooden house"
+    },
+    "station": {
+      "ja": "JR東海道本線「共和」駅 徒歩15分",
+      "vi": "Đi bộ 15 phút từ ga Kyowa (tuyến JR Tokaido)",
+      "en": "15 min walk from Kyowa Station (JR Tokaido Line)"
+    },
+    "yieldPercent": 9.5,
+    "yieldBasis": {
+      "ja": "想定家賃 月3万円で、満室の場合の表面利回り",
+      "vi": "Lợi suất gộp khi cho thuê với giá dự kiến 30.000 yên/tháng",
+      "en": "Gross yield at an assumed rent of ¥30,000/month"
+    },
+    "status": {
+      "ja": "空き家",
+      "vi": "Nhà trống",
+      "en": "Vacant"
+    },
+    "rebuild": {
+      "ja": "再建築可（幅4mの道路に接しています）",
+      "vi": "Có thể xây lại (tiếp giáp đường rộng 4m)",
+      "en": "Rebuildable (faces a 4 m road)"
+    },
+    "comment": {
+      "ja": "表示の確認用に作った架空の物件です。",
+      "vi": "Đây là bất động sản giả định, dùng để kiểm tra cách hiển thị.",
+      "en": "This is a fictional property created to test the display."
+    },
+    "photos": [],
+    "mapQuery": "愛知県大府市",
+    "videoTalk": "",
+    "videoVisit": ""
+  },
+  {
+    "id": "sample-02",
+    "sample": true,
+    "published": true,
+    "type": "house",
+    "tags": [
+      "staffHousing"
+    ],
+    "city": {
+      "ja": "愛知県東海市",
+      "vi": "Thành phố Tokai, tỉnh Aichi",
+      "en": "Tokai City, Aichi"
+    },
+    "area": "aichi",
+    "price": 2500000,
+    "landArea": 98.0,
+    "buildingArea": 72.4,
+    "builtYear": 1972,
+    "layout": "3DK",
+    "structure": {
+      "ja": "木造平屋",
+      "vi": "Nhà gỗ 1 tầng",
+      "en": "Single-story wooden house"
+    },
+    "station": {
+      "ja": "名鉄常滑線「太田川」駅 徒歩20分",
+      "vi": "Đi bộ 20 phút từ ga Otagawa (tuyến Meitetsu Tokoname)",
+      "en": "20 min walk from Otagawa Station (Meitetsu Tokoname Line)"
+    },
+    "yieldPercent": 12.0,
+    "yieldBasis": {
+      "ja": "想定家賃 月2.5万円で、満室の場合の表面利回り",
+      "vi": "Lợi suất gộp khi cho thuê với giá dự kiến 25.000 yên/tháng",
+      "en": "Gross yield at an assumed rent of ¥25,000/month"
+    },
+    "status": {
+      "ja": "空き家（室内に残置物あり）",
+      "vi": "Nhà trống (còn đồ đạc cũ bên trong)",
+      "en": "Vacant (some items left inside)"
+    },
+    "rebuild": {
+      "ja": "再建築可",
+      "vi": "Có thể xây lại",
+      "en": "Rebuildable"
+    },
+    "comment": {
+      "ja": "表示の確認用に作った架空の物件です。",
+      "vi": "Đây là bất động sản giả định, dùng để kiểm tra cách hiển thị.",
+      "en": "This is a fictional property created to test the display."
+    },
+    "photos": [],
+    "mapQuery": "愛知県東海市",
+    "videoTalk": "",
+    "videoVisit": ""
+  },
+  {
+    "id": "sample-03",
+    "sample": true,
+    "published": true,
+    "type": "house",
+    "tags": [],
+    "city": {
+      "ja": "三重県四日市市",
+      "vi": "Thành phố Yokkaichi, tỉnh Mie",
+      "en": "Yokkaichi City, Mie"
+    },
+    "area": "mie",
+    "price": 5200000,
+    "landArea": 165.3,
+    "buildingArea": 102.8,
+    "builtYear": 1985,
+    "layout": "5LDK",
+    "structure": {
+      "ja": "木造2階建て",
+      "vi": "Nhà gỗ 2 tầng",
+      "en": "2-story wooden house"
+    },
+    "station": {
+      "ja": "近鉄名古屋線「近鉄四日市」駅 バス10分",
+      "vi": "10 phút đi xe buýt từ ga Kintetsu Yokkaichi",
+      "en": "10 min by bus from Kintetsu Yokkaichi Station"
+    },
+    "yieldPercent": 8.1,
+    "yieldBasis": {
+      "ja": "想定家賃 月3.5万円で、満室の場合の表面利回り",
+      "vi": "Lợi suất gộp khi cho thuê với giá dự kiến 35.000 yên/tháng",
+      "en": "Gross yield at an assumed rent of ¥35,000/month"
+    },
+    "status": {
+      "ja": "空き家",
+      "vi": "Nhà trống",
+      "en": "Vacant"
+    },
+    "rebuild": {
+      "ja": "再建築可（幅6mの道路に接しています）",
+      "vi": "Có thể xây lại (tiếp giáp đường rộng 6m)",
+      "en": "Rebuildable (faces a 6 m road)"
+    },
+    "comment": {
+      "ja": "表示の確認用に作った架空の物件です。",
+      "vi": "Đây là bất động sản giả định, dùng để kiểm tra cách hiển thị.",
+      "en": "This is a fictional property created to test the display."
+    },
+    "photos": [],
+    "mapQuery": "三重県四日市市",
+    "videoTalk": "",
+    "videoVisit": ""
+  },
+  {
+    "id": "sample-04",
+    "sample": true,
+    "published": true,
+    "type": "land",
+    "tags": [],
+    "city": {
+      "ja": "愛知県知多市",
+      "vi": "Thành phố Chita, tỉnh Aichi",
+      "en": "Chita City, Aichi"
+    },
+    "area": "aichi",
+    "price": 12000000,
+    "landArea": 230.0,
+    "buildingArea": null,
+    "builtYear": null,
+    "layout": "",
+    "structure": "",
+    "station": {
+      "ja": "名鉄常滑線「朝倉」駅 徒歩18分",
+      "vi": "Đi bộ 18 phút từ ga Asakura (tuyến Meitetsu Tokoname)",
+      "en": "18 min walk from Asakura Station (Meitetsu Tokoname Line)"
+    },
+    "yieldPercent": null,
+    "yieldBasis": "",
+    "status": {
+      "ja": "更地",
+      "vi": "Đất trống",
+      "en": "Vacant lot"
+    },
+    "rebuild": {
+      "ja": "建築可（幅6mの道路に接しています）",
+      "vi": "Có thể xây dựng (tiếp giáp đường rộng 6m)",
+      "en": "Buildable (faces a 6 m road)"
+    },
+    "comment": {
+      "ja": "表示の確認用に作った架空の物件です。",
+      "vi": "Đây là bất động sản giả định, dùng để kiểm tra cách hiển thị.",
+      "en": "This is a fictional property created to test the display."
+    },
+    "photos": [],
+    "mapQuery": "愛知県知多市",
+    "videoTalk": "",
+    "videoVisit": ""
+  }
+]

@@ -1,0 +1,100 @@
+<!-- ============================ 物件の詳細 ============================ -->
+
+<section class="phead phead--sm">
+  <div class="wrap">
+    <p><a class="back" href="{{root}}{{lang}}/properties.html">← {{t.common.back}}</a></p>
+    {{#p.sample}}<p class="samplebar">{{t.common.sampleBadge}}｜{{t.common.sampleNote}}</p>{{/p.sample}}
+    <p class="pcard__meta">
+      {{#p.typeLabel}}<span class="ptype">{{p.typeLabel}}</span>{{/p.typeLabel}}
+      {{#p.tagList}}<span class="ptag">{{label}}</span>{{/p.tagList}}
+    </p>
+    <h1 class="h1">{{p.city}}</h1>
+    <p class="price-lg">{{p.priceText}}{{#p.vndText}}<small>{{p.vndText}}</small>{{/p.vndText}}</p>
+  </div>
+</section>
+
+<section class="sec sec--top0">
+  <div class="wrap pdetail">
+
+    <!-- 写真のスライド。写真が無いときは「準備中」の枠を出します -->
+    <div class="pdetail__media">
+      <h2 class="sr">{{t.props.detail.photos}}</h2>
+      {{#p.photos.length}}
+      <div class="slider" data-slider>
+        <div class="slider__track">
+          {{#p.photos.list}}<figure class="slider__item"><img src="{{src}}" alt="{{alt}}" loading="lazy"></figure>{{/p.photos.list}}
+        </div>
+        <button class="slider__btn slider__btn--prev" type="button" aria-label="prev">‹</button>
+        <button class="slider__btn slider__btn--next" type="button" aria-label="next">›</button>
+        <p class="slider__count"><span data-slider-now>1</span> / {{p.photos.length}}</p>
+      </div>
+      {{/p.photos.length}}
+      {{^p.photos.length}}<div class="noimg noimg--lg"><span>{{t.props.noPhoto}}</span></div>{{/p.photos.length}}
+
+      <!-- 動画は2本まで。data/properties.json の videoTalk と videoVisit に動画IDを入れると出ます -->
+      {{#p.videoTalk}}
+      <div class="pvid">
+        <h2 class="h3">{{t.props.detail.videoTalk}}</h2>
+        <p class="pvid__note">{{t.props.detail.videoTalkNote}}</p>
+        <button class="vid" type="button" data-video="{{p.videoTalk}}" aria-label="{{t.common.playVideo}}">
+          <img src="https://i.ytimg.com/vi/{{p.videoTalk}}/hqdefault.jpg" alt="" loading="lazy">
+          <span class="vid__play" aria-hidden="true"></span>
+        </button>
+      </div>
+      {{/p.videoTalk}}
+      {{#p.videoVisit}}
+      <div class="pvid">
+        <h2 class="h3"><span class="pvisit">{{p.badgeVisited}}</span> {{t.props.detail.videoVisit}}</h2>
+        <p class="pvid__note">{{t.props.detail.videoVisitNote}}</p>
+        <button class="vid" type="button" data-video="{{p.videoVisit}}" aria-label="{{t.common.playVideo}}">
+          <img src="https://i.ytimg.com/vi/{{p.videoVisit}}/hqdefault.jpg" alt="" loading="lazy">
+          <span class="vid__play" aria-hidden="true"></span>
+        </button>
+      </div>
+      {{/p.videoVisit}}
+    </div>
+
+    <div class="pdetail__info">
+      <h2 class="h3">{{t.props.detail.specs}}</h2>
+      <table class="spec">
+        <tbody>
+          {{#p.typeLabel}}<tr><th>{{t.props.labels.type}}</th><td>{{p.typeLabel}}</td></tr>{{/p.typeLabel}}
+          <tr><th>{{t.props.labels.city}}</th><td>{{p.city}}</td></tr>
+          <tr><th>{{t.props.labels.price}}</th><td>{{p.priceText}}{{#p.vndText}}<br><small>{{p.vndText}}</small>{{/p.vndText}}</td></tr>
+          {{#p.landText}}<tr><th>{{t.props.labels.land}}</th><td>{{p.landText}}</td></tr>{{/p.landText}}
+          {{#p.buildingText}}<tr><th>{{t.props.labels.building}}</th><td>{{p.buildingText}}</td></tr>{{/p.buildingText}}
+          {{#p.builtText}}<tr><th>{{t.props.labels.built}}</th><td>{{p.builtText}}</td></tr>{{/p.builtText}}
+          {{#p.layout}}<tr><th>{{t.props.labels.layout}}</th><td>{{p.layout}}</td></tr>{{/p.layout}}
+          {{#p.structure}}<tr><th>{{t.props.labels.structure}}</th><td>{{p.structure}}</td></tr>{{/p.structure}}
+          {{#p.station}}<tr><th>{{t.props.labels.station}}</th><td>{{p.station}}</td></tr>{{/p.station}}
+          {{#p.yieldText}}<tr><th>{{t.props.labels.yield}}</th><td><b class="hl">{{p.yieldText}}</b>{{#p.yieldBasis}}<br><small>{{p.yieldBasis}}</small>{{/p.yieldBasis}}</td></tr>{{/p.yieldText}}
+          {{#p.status}}<tr><th>{{t.props.labels.status}}</th><td>{{p.status}}</td></tr>{{/p.status}}
+          {{#p.rebuild}}<tr><th>{{t.props.labels.rebuild}}</th><td>{{p.rebuild}}</td></tr>{{/p.rebuild}}
+        </tbody>
+      </table>
+
+      {{#p.comment}}
+      <div class="box mt">
+        <h2 class="h3">{{t.props.detail.comment}}</h2>
+        <p>{{p.comment}}</p>
+      </div>
+      {{/p.comment}}
+
+      <p class="mt">
+        <a class="btn btn--cta btn--block" href="{{root}}{{lang}}/contact.html?p={{p.id}}">
+          {{t.props.detail.inquire}}<small>{{t.props.detail.inquireSub}}</small>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  {{#p.mapQuery}}
+  <div class="wrap mt">
+    <h2 class="h3">{{t.props.detail.map}}</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q={{p.mapQueryEnc}}&amp;hl={{lang}}&amp;output=embed" loading="lazy"
+              title="{{t.props.detail.map}}" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  {{/p.mapQuery}}
+</section>

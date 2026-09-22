@@ -1,0 +1,16 @@
+# 公開される中身。GitHub Actions が作り直すので、リポジトリには入れない
+docs/
+
+# 公開しないもの（お金の流れの下書きなど）。
+# このフォルダは GitHub にも上げません。リポジトリは誰でも見られるためです
+_非公開/
+
+# Windows / macOS が勝手に作るファイル
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 一時ファイル
+*.bak
+*.tmp
+__pycache__/

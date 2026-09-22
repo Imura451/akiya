@@ -1,0 +1,80 @@
+{
+  "siteUrl": "https://imura451.github.io/akiya/",
+  "searchEngines": false,
+  "searchEnginesNote": "検索エンジンに載せるなら true。準備中のあいだは false にして、URLを知っている人だけが見られるようにしています",
+  "company": {
+    "corp": "株式会社Minobordo",
+    "brandJa": "空き家の管理人",
+    "brandVi": "Người Quản Lý Nhà",
+    "brandEn": "The Akiya Caretaker",
+    "zip": "〒474-0073",
+    "addressJa": "愛知県大府市東新町三丁目68番地",
+    "addressEn": "3-68 Higashishin-machi, Obu, Aichi 474-0073, Japan",
+    "tel": "090-1728-4593",
+    "telIntl": "+81 90-1728-4593",
+    "mail": "gaikokujin18@gmail.com"
+  },
+  "partner": {
+    "name": "",
+    "license": "",
+    "note": "提携の宅建業者の商号と免許番号を入れてください。空のあいだは「確認中」と表示します"
+  },
+  "exchange": {
+    "jpyToVnd": null,
+    "asOf": "",
+    "note": "1円が何ドンかを数字で入れ、asOf に日付を入れてください（例: 170 と 2026年9月）。null のあいだは、ドンでの表示を出しません"
+  },
+  "messengers": {
+    "zalo": "",
+    "messenger": "",
+    "whatsapp": "",
+    "line": "https://line.me/ti/p/-yHHVfak1D",
+    "note": "URLが空のボタンは表示しません。zalo は https://zalo.me/電話番号、whatsapp は https://wa.me/81で始まる番号、messenger は https://m.me/ページ名 の形です"
+  },
+  "videos": {
+    "concept": "",
+    "about": "",
+    "note": "YouTubeの動画IDを入れます（https://youtu.be/XXXX の XXXX の部分）。空のあいだは写真と文章を出します"
+  },
+  "form": {
+    "endpoint": "https://gaikokujinconnect.d4station-info.workers.dev/api/contact"
+  },
+  "priceBands": [
+    {
+      "key": "u300",
+      "min": 0,
+      "max": 3000000
+    },
+    {
+      "key": "300_1000",
+      "min": 3000001,
+      "max": 10000000
+    },
+    {
+      "key": "1000_3000",
+      "min": 10000001,
+      "max": 30000000
+    },
+    {
+      "key": "o3000",
+      "min": 30000001,
+      "max": null
+    }
+  ],
+  "priceBandsNote": "価格帯の区切り（円）。min 以上 max 以下。max が null なら上限なし。見出しの文字は lang の props.priceLabels にあります",
+  "types": [
+    "house",
+    "mansion",
+    "land",
+    "warehouse",
+    "shop",
+    "office"
+  ],
+  "typesNote": "種別の並び順。物件の type にこのどれかを書きます。見出しの文字は lang の props.types にあります",
+  "tags": [
+    "staffHousing"
+  ],
+  "tagsNote": "用途の印の並び順。物件の tags に書きます（複数可）。見出しの文字は lang の props.tags にあります",
+  "showSamples": true,
+  "showSamplesNote": "サンプル（架空の物件）を表示するかどうか。本番の物件を載せたら false にしてください"
+}

@@ -1,0 +1,49 @@
+<!-- ============================ 運営者 ============================ -->
+
+<section class="phead">
+  <div class="wrap">
+    <h1 class="h1">{{t.about.title}}</h1>
+    <p class="lead">{{t.about.lead}}</p>
+  </div>
+</section>
+
+<section class="sec sec--top0">
+  <div class="wrap">
+    <div class="people">
+      {{#people}}
+      <article class="person">
+        <div class="person__ph">
+          {{#photo}}<img src="{{photo}}" alt="{{name}}" loading="lazy">{{/photo}}
+          {{^photo}}<div class="noimg noimg--face"><span>{{name}}</span></div>{{/photo}}
+        </div>
+        <div class="person__b">
+          <p class="person__role">{{role}}</p>
+          <h2 class="h3">{{name}}</h2>
+          <p>{{text}}</p>
+        </div>
+      </article>
+      {{/people}}
+    </div>
+  </div>
+</section>
+
+<!-- 「なぜ私たちが信頼できるか」の動画。
+     data/settings.json の videos.about に動画IDを入れると出ます -->
+<section class="sec sec--navy">
+  <div class="wrap narrow center">
+    <h2>{{t.about.whyTitle}}</h2>
+    {{#videos.about}}
+    <button class="vid mt" type="button" data-video="{{videos.about}}" aria-label="{{t.common.playVideo}}">
+      <img src="https://i.ytimg.com/vi/{{videos.about}}/hqdefault.jpg" alt="" loading="lazy">
+      <span class="vid__play" aria-hidden="true"></span>
+      <span class="vid__label">{{t.common.playVideo}}</span>
+    </button>
+    {{/videos.about}}
+    {{^videos.about}}<p class="muted-light">{{t.common.videoPending}}</p>{{/videos.about}}
+    <p class="mt">
+      <a class="btn btn--cta" href="{{root}}{{lang}}/contact.html">
+        {{t.common.ctaConsult}}<small>{{t.common.ctaConsultSub}}</small>
+      </a>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,390 @@
+{
+  "_説明": "ベトナム語の文言です（仮訳。Huongさんの確認前）。左側（\"home\" など）は変えずに、右側の文章だけを直してください。",
+  "meta": {
+    "htmlLang": "vi",
+    "langName": "Tiếng Việt",
+    "langShort": "VI",
+    "ogLocale": "vi_VN",
+    "siteName": "Người Quản Lý Nhà",
+    "siteNameSub": "Minobordo Inc.",
+    "titleSep": " | ",
+    "colon": ": "
+  },
+  "seo": {
+    "home": "Sở hữu nhà tại Nhật Bản, từ Việt Nam. Chủ yếu là nhà cũ, ngoài ra còn có căn hộ, đất, mặt bằng kinh doanh, nhà kho và văn phòng. Bạn có thể mua và quản lý bất động sản tại Nhật Bản ngay khi đang ở Việt Nam. Tư vấn bằng tiếng Việt.",
+    "flow": "Quy trình để người đang sống tại Việt Nam sở hữu bất động sản tại Nhật Bản, cùng các giấy tờ, chi phí và thuế cần thiết.",
+    "services": "Danh sách dịch vụ của Người Quản Lý Nhà. Chúng tôi hỗ trợ từ tìm nhà, mua, quản lý đến bán.",
+    "properties": "Danh sách bất động sản đầu tư tại Nhật Bản. Ngoài nhà cũ, chúng tôi còn có căn hộ, đất, mặt bằng kinh doanh, nhà kho và văn phòng. Có thể lọc theo loại hình, khu vực, giá và lợi suất.",
+    "about": "Giới thiệu người vận hành: Imura và Huong. Người quản lý có thể nhìn thấy mặt sẽ trông coi ngôi nhà của bạn tại Nhật Bản.",
+    "contact": "Tư vấn bằng tiếng Việt, tiếng Nhật và tiếng Anh. Tư vấn miễn phí."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "flow": "Quy trình & chi phí",
+    "services": "Dịch vụ",
+    "properties": "Xem nhà",
+    "about": "Về chúng tôi",
+    "contact": "Tư vấn",
+    "menu": "Menu",
+    "lang": "Ngôn ngữ"
+  },
+  "common": {
+    "ctaProperties": "Xem nhà",
+    "ctaConsult": "Tư vấn miễn phí",
+    "ctaConsultSub": "Có thể tư vấn bằng tiếng Việt",
+    "sampleBadge": "Mẫu",
+    "sampleNote": "Đây là bất động sản giả định để kiểm tra cách hiển thị. Không phải bất động sản thật.",
+    "confirming": "Đang xác nhận",
+    "estimate": "Sẽ báo giá riêng",
+    "readMore": "Xem chi tiết",
+    "back": "Quay lại danh sách",
+    "videoPending": "Video đang được chuẩn bị.",
+    "playVideo": "Xem video"
+  },
+  "home": {
+    "heroEyebrow": "Gửi đến các nhà đầu tư Việt Nam",
+    "heroTitle": "Sở hữu nhà tại Nhật Bản, từ Việt Nam.",
+    "heroLead": "Chủ yếu là nhà cũ, ngoài ra còn có căn hộ, đất và mặt bằng kinh doanh. Bạn có thể mua và quản lý bất động sản tại Nhật Bản ngay khi đang ở Việt Nam. Thay cho bạn, luôn có một người quản lý đáng tin cậy ở Nhật Bản.",
+    "videoTitle": "Chồng người Nhật, vợ người Việt. Hai vợ chồng chúng tôi cùng trông coi ngôi nhà của bạn tại Nhật Bản.",
+    "videoText": "Lo lắng khi sở hữu bất động sản ở Nhật Bản là điều dễ hiểu. Không hiểu ngôn ngữ. Không hiểu thủ tục. Không biết nên tin ai. Hai chúng tôi sẽ trả lời từng điều một.",
+    "diagramTitle": "Vai trò của Người Quản Lý Nhà",
+    "diagramLead": "Chúng tôi đứng giữa bạn ở Việt Nam và ngôi nhà ở Nhật Bản.",
+    "diagram": {
+      "investor": "Bạn",
+      "investorSub": "Việt Nam",
+      "us": "Người Quản Lý Nhà",
+      "usSub": "Imura & Huong (Nhật Bản)",
+      "pros": "Chuyên gia đối tác",
+      "prosSub": "Công ty môi giới được cấp phép, chuyên viên tư pháp, chuyên viên thuế",
+      "home": "Ngôi nhà ở Nhật Bản",
+      "homeSub": "Mua · Quản lý · Bán",
+      "arrow1": "Tư vấn bằng tiếng Việt",
+      "arrow2": "Sắp xếp thủ tục",
+      "arrow3": "Quản lý · Kiểm tra"
+    },
+    "pointsTitle": "3 điều an tâm",
+    "points": [
+      {
+        "no": "01",
+        "title": "Hiểu bằng tiếng mẹ đẻ",
+        "text": "Huong, người Việt Nam, phụ trách phiên dịch, biên dịch và giải thích. Bạn có thể xác nhận nội dung hợp đồng bằng tiếng Việt."
+      },
+      {
+        "no": "02",
+        "title": "Người quản lý có thể nhìn thấy mặt",
+        "text": "Giám đốc Imura và Huong đảm nhận việc khảo sát thực tế, làm việc với người thuê, kiểm tra ngôi nhà và thủ tục thuế tài sản cố định. Bạn biết rõ ai đang trông coi ngôi nhà của mình."
+      },
+      {
+        "no": "03",
+        "title": "Từ đầu đến cuối",
+        "text": "Chúng tôi hỗ trợ liên tục từ tìm nhà, mua, quản lý đến bán. Việc môi giới mua bán và cho thuê do công ty môi giới được cấp phép là đối tác của chúng tôi thực hiện."
+      }
+    ],
+    "latestTitle": "Thông tin nhà",
+    "latestLead": "Chủ yếu là nhà cũ, ngoài ra còn có căn hộ, đất, mặt bằng kinh doanh, nhà kho và văn phòng.",
+    "latestMore": "Xem tất cả",
+    "closingTitle": "Trước tiên, hãy trao đổi với chúng tôi",
+    "closingText": "Chưa chọn được nhà cũng không sao. Hãy hỏi bằng tiếng Việt về những điều bạn chưa rõ về bất động sản Nhật Bản. Tư vấn miễn phí.",
+    "duoFromLeft": "Từ trái sang:"
+  },
+  "flow": {
+    "title": "Quy trình & chi phí",
+    "lead": "Đây là quy trình để người đang sống tại Việt Nam sở hữu một ngôi nhà ở Nhật Bản. Chúng tôi cho bạn xem trước tất cả giấy tờ và chi phí cần thiết.",
+    "stepsTitle": "8 bước để sở hữu",
+    "steps": [
+      {
+        "no": "01",
+        "title": "Chọn nhà",
+        "text": "Xem nhà trên trang web này và tư vấn trực tuyến với chúng tôi."
+      },
+      {
+        "no": "02",
+        "title": "Khảo sát thực tế",
+        "text": "Imura và Huong đến tận nơi và gửi cho bạn ảnh, video về tình trạng ngôi nhà."
+      },
+      {
+        "no": "03",
+        "title": "Đặt mua & thương lượng giá",
+        "text": "Việc đăng ký mua và thương lượng giá do công ty môi giới đối tác thực hiện. Chúng tôi có mặt và truyền đạt nội dung bằng tiếng Việt."
+      },
+      {
+        "no": "04",
+        "title": "Chuẩn bị giấy tờ",
+        "text": "Bạn chuẩn bị các giấy tờ trong bảng bên dưới. Chúng tôi hướng dẫn cách chuẩn bị bằng tiếng Việt."
+      },
+      {
+        "no": "05",
+        "title": "Ký hợp đồng mua bán",
+        "text": "Hợp đồng được ký với sự có mặt của công ty môi giới. Huong phiên dịch."
+      },
+      {
+        "no": "06",
+        "title": "Thanh toán",
+        "text": "Cách thanh toán sẽ được hướng dẫn riêng cho từng ngôi nhà."
+      },
+      {
+        "no": "07",
+        "title": "Đăng ký chuyển quyền sở hữu",
+        "text": "Chuyên viên tư pháp làm thủ tục đổi tên chủ sở hữu ngôi nhà sang tên bạn."
+      },
+      {
+        "no": "08",
+        "title": "Bàn giao & bắt đầu quản lý",
+        "text": "Nhận chìa khóa và bắt đầu quản lý. Từ đây, chúng tôi trông coi ngôi nhà của bạn tại Nhật Bản."
+      }
+    ],
+    "docsTitle": "Giấy tờ cần thiết",
+    "docsLead": "Dành cho người Việt Nam đang sống tại Việt Nam.",
+    "docs": [
+      {
+        "name": "Hộ chiếu",
+        "text": "Dùng để xác nhận danh tính."
+      },
+      {
+        "name": "Giấy xác nhận địa chỉ",
+        "text": "Giấy chứng minh nơi bạn đang sống tại Việt Nam."
+      },
+      {
+        "name": "Bản tuyên thệ · Xác nhận chữ ký",
+        "text": "Làm tại Đại sứ quán Việt Nam tại Nhật Bản hoặc phòng công chứng tại Việt Nam. Giấy này thay cho giấy chứng nhận con dấu của Nhật Bản."
+      },
+      {
+        "name": "Giấy ủy quyền",
+        "text": "Dùng khi bạn không thể đến Nhật Bản, để ủy thác thủ tục cho người khác."
+      },
+      {
+        "name": "Khai báo việc sở hữu",
+        "text": "Khi người sống ở nước ngoài sở hữu bất động sản tại Nhật Bản, có thể cần khai báo với nhà nước."
+      }
+    ],
+    "docsNote": "Giấy tờ thực tế cần thiết sẽ được xác nhận với công ty môi giới đối tác và chuyên viên tư pháp, rồi hướng dẫn riêng cho từng ngôi nhà.",
+    "costTitle": "Chi phí cho đến khi sở hữu",
+    "costs": [
+      {
+        "name": "Giá nhà",
+        "text": "Số tiền trả cho người bán."
+      },
+      {
+        "name": "Phí môi giới",
+        "text": "Trả cho công ty môi giới đối tác."
+      },
+      {
+        "name": "Thuế đăng ký",
+        "text": "Thuế cho việc đăng ký đổi chủ sở hữu."
+      },
+      {
+        "name": "Thuế mua bất động sản",
+        "text": "Thuế chỉ phải trả một lần khi sở hữu nhà."
+      },
+      {
+        "name": "Thù lao chuyên viên tư pháp",
+        "text": "Chi phí làm thủ tục đăng ký."
+      },
+      {
+        "name": "Thuế tem",
+        "text": "Thuế đánh trên hợp đồng mua bán."
+      },
+      {
+        "name": "Chi phí dịch thuật · công chứng",
+        "text": "Chi phí dịch và công chứng giấy tờ."
+      },
+      {
+        "name": "Phí hỗ trợ của chúng tôi",
+        "text": "Chi phí khảo sát, phiên dịch và hỗ trợ thủ tục."
+      }
+    ],
+    "costNote": "Số tiền thay đổi tùy theo ngôi nhà. Sau khi trao đổi, chúng tôi sẽ báo giá riêng cho từng ngôi nhà.",
+    "afterTitle": "Chi phí sau khi sở hữu",
+    "after": [
+      {
+        "name": "Thuế tài sản cố định",
+        "text": "Thuế phải trả mỗi năm một lần. Chúng tôi làm thủ tục thay cho bạn với tư cách \"người đại diện nộp thuế\"."
+      },
+      {
+        "name": "Phí quản lý",
+        "text": "Chi phí quản lý của chúng tôi, như kiểm tra ngôi nhà và làm việc với người thuê."
+      },
+      {
+        "name": "Chi phí sửa chữa",
+        "text": "Phát sinh khi cần, tùy theo tình trạng xuống cấp của ngôi nhà."
+      }
+    ],
+    "taxNote": "Cách tính thuế thay đổi tùy theo nơi bạn sống và từng ngôi nhà. Chúng tôi sẽ xác nhận với chuyên viên thuế và hướng dẫn riêng. Quy định có thể thay đổi, vui lòng kiểm tra thông tin mới nhất tại cơ quan có thẩm quyền."
+  },
+  "services": {
+    "title": "Dịch vụ",
+    "lead": "Chúng tôi hỗ trợ liên tục từ tìm nhà đến bán nhà.",
+    "items": [
+      {
+        "title": "Cung cấp thông tin nhà",
+        "text": "Giới thiệu bất động sản phù hợp để đầu tư: chủ yếu là nhà cũ, ngoài ra còn có căn hộ, đất, mặt bằng kinh doanh, nhà kho và văn phòng. Chúng tôi cũng có thể đề xuất nhà phù hợp làm chỗ ở cho lao động nước ngoài."
+      },
+      {
+        "title": "Khảo sát thực tế thay bạn",
+        "text": "Imura và Huong đến tận nơi và báo cáo tình trạng ngôi nhà bằng ảnh và video."
+      },
+      {
+        "title": "Hỗ trợ mua nhà",
+        "text": "Có mặt khi đặt mua và thương lượng giá, truyền đạt nội dung hợp đồng bằng tiếng Việt."
+      },
+      {
+        "title": "Người đại diện nộp thuế",
+        "text": "Thay cho người sống ở nước ngoài, chúng tôi đảm nhận thủ tục thuế tài sản cố định."
+      },
+      {
+        "title": "Quản lý cho thuê",
+        "text": "Làm việc với người thuê và kiểm tra ngôi nhà. Việc tìm người thuê do công ty môi giới đối tác thực hiện."
+      },
+      {
+        "title": "Hỗ trợ bán nhà",
+        "text": "Khi bạn muốn bán, chúng tôi hỗ trợ cho đến khi bán xong."
+      }
+    ],
+    "partnerTitle": "Về hoạt động môi giới bất động sản",
+    "partnerText": "Việc môi giới mua bán và cho thuê bất động sản do công ty môi giới được cấp phép là đối tác của chúng tôi thực hiện. Chúng tôi đảm nhận vai trò đầu mối tư vấn và điều phối thủ tục."
+  },
+  "props": {
+    "title": "Thông tin nhà",
+    "lead": "Bất động sản đầu tư tại Nhật Bản. Ngoài nhà cũ, chúng tôi còn có căn hộ, đất, mặt bằng kinh doanh, nhà kho và văn phòng.",
+    "filterArea": "Khu vực",
+    "filterPrice": "Giá",
+    "filterYield": "Lợi suất",
+    "filterType": "Loại hình",
+    "filterTag": "Mục đích",
+    "all": "Tất cả",
+    "areas": {
+      "aichi": "Tỉnh Aichi",
+      "mie": "Tỉnh Mie",
+      "gifu": "Tỉnh Gifu",
+      "shizuoka": "Tỉnh Shizuoka"
+    },
+    "types": {
+      "house": "Nhà riêng",
+      "mansion": "Căn hộ chung cư",
+      "land": "Đất",
+      "warehouse": "Nhà kho",
+      "shop": "Mặt bằng kinh doanh",
+      "office": "Văn phòng"
+    },
+    "tags": {
+      "staffHousing": "Nhà ở cho lao động nước ngoài"
+    },
+    "priceLabels": {
+      "u300": "Đến 3 triệu yên",
+      "300_1000": "3–10 triệu yên",
+      "1000_3000": "10–30 triệu yên",
+      "o3000": "Từ 30 triệu yên"
+    },
+    "yieldBands": [
+      {
+        "key": "8",
+        "label": "Từ 8%"
+      },
+      {
+        "key": "10",
+        "label": "Từ 10%"
+      }
+    ],
+    "hitsBefore": "",
+    "hitsAfter": "ngôi nhà",
+    "empty": "Không có nhà phù hợp. Vui lòng thay đổi điều kiện lọc.",
+    "none": "Hiện chưa có nhà để giới thiệu. Hãy cho chúng tôi biết mong muốn của bạn, chúng tôi sẽ tìm giúp.",
+    "noPhoto": "Ảnh đang được chuẩn bị",
+    "labels": {
+      "type": "Loại hình",
+      "city": "Địa chỉ",
+      "price": "Giá",
+      "land": "Diện tích đất",
+      "building": "Diện tích nhà",
+      "built": "Năm xây dựng",
+      "layout": "Bố cục phòng",
+      "structure": "Kết cấu",
+      "station": "Giao thông",
+      "yield": "Lợi suất dự kiến",
+      "status": "Hiện trạng",
+      "rebuild": "Xây lại"
+    },
+    "units": {
+      "sqm": "m²",
+      "yen": "yên"
+    },
+    "vndPrefix": "khoảng",
+    "vndNote": "Giá bằng đồng Việt Nam chỉ mang tính tham khảo",
+    "detail": {
+      "photos": "Hình ảnh",
+      "specs": "Thông tin nhà",
+      "map": "Bản đồ",
+      "comment": "Lời nhắn từ người quản lý",
+      "video": "Video",
+      "inquire": "Tư vấn về ngôi nhà này",
+      "inquireSub": "Có thể tư vấn bằng tiếng Việt",
+      "videoTalk": "Hai người quản lý bình luận",
+      "videoTalkNote": "Imura và Huong vừa xem thông tin ngôi nhà vừa nói về cả điểm tốt lẫn điểm cần lưu ý.",
+      "videoVisit": "Ghi hình khảo sát thực tế",
+      "videoVisitNote": "Chúng tôi đã đến tận nơi và quay lại tình trạng ngôi nhà cùng khu vực xung quanh."
+    },
+    "badgeVisited": "Đã khảo sát thực tế"
+  },
+  "about": {
+    "title": "Về chúng tôi",
+    "lead": "Người quản lý có thể nhìn thấy mặt sẽ trông coi ngôi nhà của bạn tại Nhật Bản.",
+    "whyTitle": "Chúng tôi tự nói bằng lời của mình vì sao bạn có thể tin tưởng",
+    "people": [
+      {
+        "key": "imura",
+        "name": "Imura Minoru",
+        "role": "Giám đốc",
+        "text": "Sinh năm 1960 tại thành phố Obu, tỉnh Aichi. Hiện vẫn là chủ nhà hàng và nhà nghỉ (guesthouse). Bắt đầu làm việc về nhân lực nước ngoài từ năm 2018, và Việt Nam là nơi tôi đến nhiều nhất trong năm. Tôi đang ở Nhật Bản và sẽ tự mình trông coi ngôi nhà của bạn."
+      },
+      {
+        "key": "huong",
+        "name": "Huong",
+        "role": "Phiên dịch · Biên dịch · Quản lý",
+        "text": "Quê ở Hà Nội, Việt Nam. Huong từng sang Nhật Bản làm thực tập sinh kỹ năng, và cũng từng sống tại Ba Lan và Cộng hòa Séc. Với phương châm “kết nối Việt Nam và Nhật Bản”, Huong hỗ trợ tận tình từ buổi trao đổi đầu tiên cho đến ngày thực hiện, để mọi việc diễn ra suôn sẻ mà không phải lo lắng về ngôn ngữ. Hiện nay, Huong cùng chồng sống qua lại giữa Nhật Bản và Việt Nam."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Tư vấn miễn phí",
+    "lead": "Có thể tư vấn bằng tiếng Việt, tiếng Nhật và tiếng Anh. Chưa chọn được nhà cũng không sao.",
+    "formTitle": "Mẫu tư vấn",
+    "form": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "tel": "Số điện thoại (Zalo)",
+      "language": "Ngôn ngữ mong muốn",
+      "message": "Nội dung cần tư vấn",
+      "messagePlaceholder": "Ví dụ: Tôi đang tìm nhà có thu nhập cho thuê, khoảng 3 triệu yên.",
+      "required": "Bắt buộc",
+      "send": "Gửi",
+      "sending": "Đang gửi…",
+      "ok": "Đã gửi. Xin cảm ơn. Chúng tôi sẽ trả lời trong vòng 2 ngày làm việc.",
+      "ng": "Không gửi được. Xin vui lòng liên hệ qua email.",
+      "missing": "Vui lòng nhập họ tên, email và nội dung cần tư vấn.",
+      "badEmail": "Vui lòng kiểm tra lại địa chỉ email.",
+      "privacy": "Thông tin bạn gửi chỉ được dùng để liên hệ và trả lời tư vấn.",
+      "propertyPrefix": "Mã nhà"
+    },
+    "languages": {
+      "vi": "Tiếng Việt",
+      "ja": "Tiếng Nhật",
+      "en": "Tiếng Anh"
+    },
+    "messengersTitle": "Tư vấn qua ứng dụng nhắn tin",
+    "directTitle": "Điện thoại · Email",
+    "telLabel": "Điện thoại",
+    "mailLabel": "Email",
+    "addressLabel": "Địa chỉ"
+  },
+  "footer": {
+    "disclaimerTitle": "Lưu ý",
+    "disclaimer": "Thông tin trên trang web này là một trong những tài liệu để bạn đưa ra quyết định đầu tư. Quyết định cuối cùng thuộc về trách nhiệm của bạn. Việc môi giới mua bán và cho thuê bất động sản do công ty môi giới được cấp phép là đối tác của chúng tôi thực hiện. Nội dung về thuế và pháp luật có thể thay đổi, vui lòng kiểm tra thông tin mới nhất với chuyên gia hoặc cơ quan có thẩm quyền.",
+    "partnerLabel": "Công ty môi giới đối tác",
+    "operator": "Đơn vị vận hành"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "text": "Có thể URL đã thay đổi hoặc trang không còn tồn tại.",
+    "back": "Về trang chủ"
+  }
+}

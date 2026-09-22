@@ -1,0 +1,122 @@
+<!-- ============================ トップ ============================ -->
+
+<section class="hero">
+  <div class="wrap hero__in">
+    <p class="eyebrow">{{t.home.heroEyebrow}}</p>
+    <h1 class="hero__title">{{&heroTitleHtml}}</h1>
+    <p class="hero__lead">{{t.home.heroLead}}</p>
+    <div class="actions">
+      <a class="btn btn--cta" href="{{root}}{{lang}}/properties.html">{{t.common.ctaProperties}}</a>
+      <a class="btn btn--ghost" href="{{root}}{{lang}}/contact.html">
+        {{t.common.ctaConsult}}<small>{{t.common.ctaConsultSub}}</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 井村と Huong のメッセージ動画。
+     data/settings.json の videos.concept に動画IDを入れると、ここに動画が出ます -->
+<section class="sec sec--navy" id="message">
+  <div class="wrap msg">
+    <div class="msg__media">
+      {{#videos.concept}}
+      <button class="vid" type="button" data-video="{{videos.concept}}" aria-label="{{t.common.playVideo}}">
+        <img src="https://i.ytimg.com/vi/{{videos.concept}}/hqdefault.jpg" alt="" loading="lazy">
+        <span class="vid__play" aria-hidden="true"></span>
+        <span class="vid__label">{{t.common.playVideo}}</span>
+      </button>
+      {{/videos.concept}}
+      {{^videos.concept}}
+      {{#duoPhoto}}
+      <!-- 2人の写真。プロのカメラマンの写真ができたら assets/people/duo.jpg を差し替えてください -->
+      <figure class="duo1">
+        <img src="{{duoPhoto}}" alt="{{duoCaption}}">
+        <figcaption>{{duoCaption}}</figcaption>
+      </figure>
+      {{/duoPhoto}}
+      {{^duoPhoto}}
+      <div class="duo">
+        {{#people}}
+        <figure class="duo__p">
+          {{#photo}}<img src="{{photo}}" alt="{{name}}" loading="lazy">{{/photo}}
+          {{^photo}}<div class="noimg noimg--face"><span>{{name}}</span></div>{{/photo}}
+          <figcaption>{{name}}<small>{{role}}</small></figcaption>
+        </figure>
+        {{/people}}
+      </div>
+      {{/duoPhoto}}
+      {{/videos.concept}}
+    </div>
+    <div class="msg__body">
+      <h2 class="msg__title">{{&videoTitleHtml}}</h2>
+      <p>{{t.home.videoText}}</p>
+      {{^videos.concept}}<p class="muted-light">{{t.common.videoPending}}</p>{{/videos.concept}}
+    </div>
+  </div>
+</section>
+
+<!-- サービスの全体像を1枚の図で -->
+<section class="sec" id="role">
+  <div class="wrap">
+    <h2 class="h2">{{t.home.diagramTitle}}</h2>
+    <p class="lead">{{t.home.diagramLead}}</p>
+
+    <div class="diagram" role="img" aria-label="{{t.home.diagramTitle}}">
+      <div class="dg dg--vn">
+        <span class="dg__flag dg__flag--vn" aria-hidden="true"></span>
+        <b>{{t.home.diagram.investor}}</b><small>{{t.home.diagram.investorSub}}</small>
+      </div>
+      <div class="dg__arrow"><span>{{t.home.diagram.arrow1}}</span></div>
+      <div class="dg dg--us">
+        <img src="{{root}}assets/icon.svg" width="40" height="40" alt="">
+        <b>{{t.home.diagram.us}}</b><small>{{t.home.diagram.usSub}}</small>
+      </div>
+      <div class="dg__arrow"><span>{{t.home.diagram.arrow2}}</span></div>
+      <div class="dg dg--pro">
+        <b>{{t.home.diagram.pros}}</b><small>{{t.home.diagram.prosSub}}</small>
+      </div>
+      <div class="dg__arrow"><span>{{t.home.diagram.arrow3}}</span></div>
+      <div class="dg dg--jp">
+        <span class="dg__flag dg__flag--jp" aria-hidden="true"></span>
+        <b>{{t.home.diagram.home}}</b><small>{{t.home.diagram.homeSub}}</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="points">
+  <div class="wrap">
+    <h2 class="h2">{{t.home.pointsTitle}}</h2>
+    <div class="points">
+      {{#t.home.points}}
+      <article class="point">
+        <p class="point__no">{{no}}</p>
+        <h3>{{title}}</h3>
+        <p>{{text}}</p>
+      </article>
+      {{/t.home.points}}
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="latest">
+  <div class="wrap">
+    <h2 class="h2">{{t.home.latestTitle}}</h2>
+    <p class="lead">{{t.home.latestLead}}</p>
+    {{#latestCards.length}}
+    <div class="pgrid">{{&latestCards.html}}</div>
+    <p class="center"><a class="btn btn--ghost" href="{{root}}{{lang}}/properties.html">{{t.home.latestMore}}</a></p>
+    {{/latestCards.length}}
+    {{^latestCards.length}}<p class="empty">{{t.props.none}}</p>{{/latestCards.length}}
+  </div>
+</section>
+
+<section class="sec sec--navy closing">
+  <div class="wrap narrow center">
+    <h2>{{t.home.closingTitle}}</h2>
+    <p>{{t.home.closingText}}</p>
+    <a class="btn btn--cta" href="{{root}}{{lang}}/contact.html">
+      {{t.common.ctaConsult}}<small>{{t.common.ctaConsultSub}}</small>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="空き家の管理人">
+  <!-- レッドの四角に白い家。戸口だけ白く塗りつぶして、明かりの灯った家（人がいる家）を表します -->
+  <rect width="64" height="64" rx="14" fill="#E30613"/>
+  <path d="M12 31 L32 14 L52 31" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 29 V50 H46 V29" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/>
+  <rect x="27" y="36" width="10" height="14" rx="1.5" fill="#fff"/>
+</svg>

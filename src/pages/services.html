@@ -1,0 +1,37 @@
+<!-- ============================ サービス ============================ -->
+
+<section class="phead">
+  <div class="wrap">
+    <h1 class="h1">{{t.services.title}}</h1>
+    <p class="lead">{{t.services.lead}}</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="svcs">
+      {{#t.services.items}}
+      <article class="svc">
+        <h3>{{title}}</h3>
+        <p>{{text}}</p>
+      </article>
+      {{/t.services.items}}
+    </div>
+
+    <div class="box mt">
+      <h2 class="h3">{{t.services.partnerTitle}}</h2>
+      <p>{{t.services.partnerText}}</p>
+      <p class="muted">
+        {{t.footer.partnerLabel}}{{t.meta.colon}}
+        {{#partner.name}}{{partner.name}}（{{partner.license}}）{{/partner.name}}
+        {{^partner.name}}{{t.common.confirming}}{{/partner.name}}
+      </p>
+    </div>
+
+    <p class="center mt">
+      <a class="btn btn--cta" href="{{root}}{{lang}}/contact.html">
+        {{t.common.ctaConsult}}<small>{{t.common.ctaConsultSub}}</small>
+      </a>
+    </p>
+  </div>
+</section>

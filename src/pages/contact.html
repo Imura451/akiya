@@ -1,0 +1,69 @@
+<!-- ============================ お問い合わせ ============================
+     送り先は、会社サイトと同じ Cloudflare Worker（/api/contact）です。
+     そこから Gmail と Lark の両方へ届きます。
+     ======================================================================= -->
+
+<section class="phead">
+  <div class="wrap">
+    <h1 class="h1">{{t.contact.title}}</h1>
+    <p class="lead">{{t.contact.lead}}</p>
+  </div>
+</section>
+
+<section class="sec sec--top0">
+  <div class="wrap contact">
+
+    <div class="contact__form">
+      <h2 class="h3">{{t.contact.formTitle}}</h2>
+      <form id="cform" novalidate>
+        <input type="hidden" name="kind" value="空き家の管理人へのご相談（{{t.meta.langName}}）">
+        <input type="hidden" name="page" value="空き家の管理人 {{lang}}">
+        <p class="hp"><label>leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+        <p class="field">
+          <label for="fName">{{t.contact.form.name}}<i>{{t.contact.form.required}}</i></label>
+          <input id="fName" name="name" required autocomplete="name">
+        </p>
+        <p class="field">
+          <label for="fMail">{{t.contact.form.email}}<i>{{t.contact.form.required}}</i></label>
+          <input id="fMail" name="email" type="email" required autocomplete="email" inputmode="email">
+        </p>
+        <p class="field">
+          <label for="fTel">{{t.contact.form.tel}}</label>
+          <input id="fTel" name="tel" autocomplete="tel" inputmode="tel">
+        </p>
+        <p class="field">
+          <label for="fLang">{{t.contact.form.language}}</label>
+          <select id="fLang" name="language">
+            <option value="ベトナム語"{{#isVi}} selected{{/isVi}}>{{t.contact.languages.vi}}</option>
+            <option value="日本語"{{#isJa}} selected{{/isJa}}>{{t.contact.languages.ja}}</option>
+            <option value="英語"{{#isEn}} selected{{/isEn}}>{{t.contact.languages.en}}</option>
+          </select>
+        </p>
+        <p class="field">
+          <label for="fMsg">{{t.contact.form.message}}<i>{{t.contact.form.required}}</i></label>
+          <textarea id="fMsg" name="message" rows="6" required placeholder="{{t.contact.form.messagePlaceholder}}"></textarea>
+        </p>
+        <p class="small muted">{{t.contact.form.privacy}}</p>
+        <p><button type="submit" class="btn btn--cta btn--block" id="fSend">{{t.contact.form.send}}</button></p>
+        <p class="fmsg" id="fMsgBox" hidden></p>
+      </form>
+    </div>
+
+    <div class="contact__side">
+      {{#messengers.length}}
+      <h2 class="h3">{{t.contact.messengersTitle}}</h2>
+      <div class="msgr">
+        {{#messengers.list}}<a class="msgr__btn msgr__btn--{{key}}" href="{{url}}" target="_blank" rel="noopener">{{label}}</a>{{/messengers.list}}
+      </div>
+      {{/messengers.length}}
+
+      <h2 class="h3 mt">{{t.contact.directTitle}}</h2>
+      <dl class="rows rows--plain">
+        <div class="rows__r"><dt>{{t.contact.telLabel}}</dt><dd><a href="tel:{{telHref}}">{{telShown}}</a></dd></div>
+        <div class="rows__r"><dt>{{t.contact.mailLabel}}</dt><dd><a href="mailto:{{company.mail}}">{{company.mail}}</a></dd></div>
+        <div class="rows__r"><dt>{{t.contact.addressLabel}}</dt><dd>{{zipShown}}{{address}}</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>

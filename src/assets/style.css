@@ -1,0 +1,350 @@
+/* =====================================================================
+   空き家の管理人 ― 見た目
+
+   配色（CLAUDE.md の「今後の配色」と同じ。2026-09-22〜）
+     白         #FFFFFF … 地
+     レッド     #E30613 … ボタン・強調・線だけ。本文には使わない
+     ブラック   #1A1A1A … 本文・見出し・濃い面
+     薄いグレー #F5F5F5 … 節ごとの地
+     線         #E0E0E0 … 罫線・枠
+     補足の文字 #616161 … 注記など（薄いグレーの上でも読める濃さ）
+
+   グラデーションと影は使いません。
+   薄いグレーの上に、レッドの小さい文字は置きません（読みにくいため）。
+
+   スマートフォン（幅375px）を基準に作り、広い画面で段組みを増やしています。
+   ===================================================================== */
+:root{
+  --ink:#1A1A1A;
+  --red:#E30613;
+  --red-dark:#C00511;
+  --muted:#616161;
+  --line:#E0E0E0;
+  --tint:#F5F5F5;
+  --bg:#FFFFFF;
+  /* 国旗の図にだけ使う色 */
+  --jp:#BC002D;
+  --vn:#DA251D;
+  --gold:#FFCD00;
+  --radius:10px;
+  --wrap:1080px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  /* ベトナム語・英語は Noto Sans。声調記号を全部持っているフォントです */
+  font-family:"Noto Sans","Noto Sans JP","Segoe UI",Arial,sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* 日本語のページだけ、日本語のフォントを先に使います */
+body.lang-ja{
+  font-family:"Noto Sans JP","Noto Sans","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  line-height:1.9;letter-spacing:.03em;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--ink)}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+h1,h2,h3{margin:0;line-height:1.4;font-weight:700;color:var(--ink)}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+.center{text-align:center}
+.mt{margin-top:32px}
+.muted{color:var(--muted)}
+.muted-light{color:#C8C8C8}
+.small{font-size:13px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:8px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:200}
+
+/* ---------- 上端の日越の赤い線 ---------- */
+.flagline{height:4px;background:var(--red)}
+
+/* ---------- ヘッダー ---------- */
+.head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.head__in{display:flex;align-items:center;gap:8px;min-height:60px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);min-width:0;flex:1 1 0}
+/* ↑ 幅の基準を0にしておくと、ロゴの文字が長くても、言語ボタンとメニューを2行目に押し出しません */
+.brand img{width:34px;height:34px;flex:none}
+.brand__text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.brand__text b{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand__text small{font-size:11px;color:var(--muted)}
+
+/* 言語の切り替え。いつも右上に出しておきます */
+.langs{margin-left:auto;display:flex;flex:none;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.langs__a{display:block;padding:5px 7px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--muted)}
+.langs__a+.langs__a{border-left:1px solid var(--line)}
+.langs__a.is-current{background:var(--ink);color:#fff}
+
+.menu-btn{flex:none;display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;padding:4px;cursor:pointer;color:var(--ink);font-family:inherit}
+.menu-btn__bar,.menu-btn__bar::before,.menu-btn__bar::after{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;position:relative}
+.menu-btn__bar::before,.menu-btn__bar::after{content:"";position:absolute;left:0}
+.menu-btn__bar::before{top:-7px}
+.menu-btn__bar::after{top:7px}
+.menu-btn__bar{margin:8px 0}
+.menu-btn__label{font-size:10px}
+
+.gnav{display:none;width:100%;padding:6px 0 14px}
+.gnav.is-open{display:block}
+.gnav ul{display:flex;flex-direction:column}
+.gnav a{display:block;padding:11px 4px;text-decoration:none;color:var(--ink);font-weight:700;border-bottom:1px solid var(--line)}
+.gnav a.is-current{color:var(--red)}
+.gnav__cta{margin-top:14px;display:block;text-align:center}
+.gnav .btn{border-bottom:0;color:#fff}
+
+@media(min-width:960px){
+  .head__in{flex-wrap:nowrap;gap:18px}
+  .menu-btn{display:none}
+  .gnav{display:flex!important;align-items:center;gap:18px;width:auto;padding:0;order:2}
+  .gnav ul{flex-direction:row;gap:18px}
+  .gnav a{border:0;padding:6px 0;font-size:14.5px}
+  .gnav__cta{margin:0;padding:9px 18px}
+  .langs{order:3;margin-left:0}
+  .brand{margin-right:auto}
+  .brand__text b{font-size:15px}
+  .langs__a{padding:5px 10px}
+  /* 「相談する」ボタン。メニューの文字の余白指定より強くして、ボタンらしい余白にします */
+  .gnav a.gnav__cta{padding:9px 18px;font-size:14.5px}
+}
+
+/* ---------- ボタン ---------- */
+.btn{display:inline-block;text-align:center;text-decoration:none;font-weight:700;font-family:inherit;
+  border-radius:8px;padding:13px 24px;font-size:16px;cursor:pointer;border:2px solid transparent;line-height:1.35}
+.btn small{display:block;font-size:12px;font-weight:400;margin-top:2px;opacity:.95}
+.btn--cta{background:var(--red);color:#fff;border-color:var(--red)}
+.btn--cta:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn--ghost{background:#fff;color:var(--ink);border-color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.btn--block{display:block;width:100%}
+.actions{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+@media(min-width:600px){.actions{flex-direction:row;flex-wrap:wrap}}
+
+/* ---------- 節 ---------- */
+.sec{padding:56px 0}
+.sec--top0{padding-top:8px}
+.sec--tint{background:var(--tint)}
+.sec--navy{background:var(--ink);color:#fff}
+.sec--navy h2,.sec--navy h3{color:#fff}
+.h1{font-size:clamp(26px,6vw,38px)}
+.h2{font-size:clamp(22px,5vw,30px);margin-bottom:10px}
+.h3{font-size:19px;margin-bottom:10px}
+.lead{color:var(--muted);font-size:16.5px;margin-bottom:26px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--red);letter-spacing:.06em;margin-bottom:14px;
+  border-bottom:3px solid var(--red);padding-bottom:2px}
+.note{font-size:13.5px;color:var(--muted);margin-top:14px}
+.box{border:1px solid var(--line);border-left:5px solid var(--red);border-radius:var(--radius);padding:20px 18px;background:#fff}
+.empty{padding:28px 18px;border:1px dashed var(--line);border-radius:var(--radius);text-align:center;color:var(--muted)}
+
+/* ---------- ヒーロー ---------- */
+.hero{padding:48px 0 52px;background:#fff;border-bottom:1px solid var(--line)}
+.hero__title{font-size:clamp(26px,7vw,52px);line-height:1.3;margin-bottom:18px}
+/* 句のまとまりごとに折り返します（phraseHtml で包んだ部分） */
+.ph{display:inline-block;max-width:100%}
+.hero__lead{font-size:clamp(16.5px,2.4vw,19px);max-width:680px;color:var(--ink)}
+
+/* ---------- ページの見出し ---------- */
+.phead{padding:40px 0 22px}
+.phead--sm{padding:24px 0 14px}
+.phead .lead{margin-bottom:0}
+.back{font-size:14px;text-decoration:none}
+.samplebar{background:var(--tint);border:1px solid var(--line);border-left:5px solid var(--ink);color:var(--ink);border-radius:8px;padding:9px 12px;font-size:13.5px;margin:12px 0}
+.price-lg{font-size:clamp(24px,5.5vw,32px);font-weight:700;color:var(--red);margin-top:8px}
+.price-lg small{display:block;font-size:14px;color:var(--muted);font-weight:400}
+
+/* ---------- 代表とHuongのメッセージ ---------- */
+.msg{display:grid;gap:26px;align-items:center}
+@media(min-width:880px){.msg{grid-template-columns:1.1fr 1fr;gap:44px}}
+.msg__body p{color:#EDEDED}
+/* 「日本人の夫と、ベトナム人の妻。」の見出し。句ごとに折り返します */
+.msg__title{font-size:clamp(21px,4.8vw,28px);line-height:1.5;margin-bottom:14px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+/* 2人で写った1枚の写真。いまの写真は幅282pxと小さいので、420pxより大きくは広げません
+   （プロの写真に差し替えたら、この上限は外して構いません） */
+.duo1{margin:0 auto;max-width:420px}
+.duo1 img{width:100%;border-radius:var(--radius)}
+.duo1 figcaption{margin-top:10px;font-size:13.5px;color:#C8C8C8}
+.duo__p{margin:0}
+.duo__p img,.duo__p .noimg{aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:var(--radius)}
+.duo__p figcaption{margin-top:8px;font-weight:700;color:#fff}
+.duo__p figcaption small{display:block;font-weight:400;color:#C8C8C8;font-size:12.5px}
+
+/* 動画。押したときだけ YouTube を読み込みます */
+.vid{position:relative;display:block;width:100%;padding:0;border:0;border-radius:var(--radius);overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.vid img{width:100%;height:100%;object-fit:cover;opacity:.9}
+.vid__play{position:absolute;left:50%;top:50%;width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;background:var(--red)}
+.vid__play::after{content:"";position:absolute;left:54%;top:50%;transform:translate(-50%,-50%);
+  border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff}
+.vid__label{position:absolute;left:0;right:0;bottom:12px;text-align:center;color:#fff;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.vid-frame{aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;background:#000}
+.vid-frame iframe{width:100%;height:100%;border:0;display:block}
+
+/* ---------- 役割の図 ---------- */
+.diagram{display:grid;gap:10px;margin-top:10px}
+.dg{border:2px solid var(--line);border-radius:var(--radius);padding:16px;text-align:center;background:#fff}
+.dg b{display:block;font-size:17px;color:var(--ink)}
+.dg small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.dg img{margin:0 auto 6px}
+.dg--us{border-color:var(--ink);background:var(--tint)}
+.dg__flag{display:block;width:40px;height:26px;margin:0 auto 8px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.dg__flag--vn{background:var(--vn);position:relative}
+.dg__flag--vn::after{content:"★";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px}
+.dg__flag--jp{background:radial-gradient(circle at 50% 50%,var(--jp) 0 7px,#fff 7.5px)}
+.dg__arrow{text-align:center;font-size:13px;color:var(--red);font-weight:700}
+.dg__arrow::before{content:"↓";display:block;font-size:20px;line-height:1}
+@media(min-width:960px){
+  .diagram{grid-template-columns:1fr auto 1.2fr auto 1fr auto 1fr;align-items:center}
+  .dg__arrow{max-width:110px}
+  .dg__arrow::before{content:"→"}
+}
+
+/* ---------- 3つの安心 ---------- */
+.points{display:grid;gap:16px}
+@media(min-width:880px){.points{grid-template-columns:repeat(3,1fr)}}
+.point{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px}
+.point__no{font-size:28px;font-weight:700;color:var(--red);line-height:1;margin-bottom:10px}
+.point h3{font-size:19px;margin-bottom:8px}
+
+/* ---------- 物件カード ---------- */
+.pgrid{display:grid;gap:18px}
+@media(min-width:640px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+.pcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  text-decoration:none;color:inherit;background:#fff;transition:border-color .15s}
+.pcard:hover{border-color:var(--ink)}
+.pcard[hidden]{display:none}
+.pcard__ph{position:relative;aspect-ratio:4/3;background:var(--tint)}
+.pcard__ph img{width:100%;height:100%;object-fit:cover}
+.pcard__b{padding:14px 16px 18px}
+/* 種別と用途の印。種別は黒の枠、用途は薄いグレーの地で見分けます */
+.pcard__meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.ptype{font-size:12px;font-weight:700;color:var(--ink);border:1px solid var(--ink);border-radius:4px;padding:1px 8px}
+.ptag{font-size:12px;font-weight:700;color:var(--ink);background:var(--tint);border:1px solid var(--line);border-radius:4px;padding:1px 8px}
+/* 現地調査済みの印。このサイトの強みなので、白地にレッドで目立たせます */
+.pvisit{font-size:12px;font-weight:700;color:var(--red);border:1px solid var(--red);border-radius:4px;padding:1px 8px;background:#fff;vertical-align:2px}
+/* 物件の詳細の動画 */
+.pvid{margin-top:26px}
+.pvid__note{font-size:14px;color:var(--muted);margin-bottom:10px}
+.pcard__city{font-size:13.5px;color:var(--muted);margin-bottom:2px}
+.pcard__price{font-size:22px;font-weight:700;color:var(--red);margin:0}
+.pcard__vnd{font-size:13px;color:var(--muted);margin:0 0 8px}
+.pcard__spec{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin:10px 0}
+.pcard__spec div{min-width:0}
+.pcard__spec dt{font-size:11.5px;color:var(--muted)}
+.pcard__spec dd{margin:0;font-size:14px;font-weight:700}
+.pcard__station{font-size:13px;color:var(--muted);margin:0}
+.hl{color:var(--red)}
+.badge{position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px}
+.badge--sample{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+
+/* 写真が無いときの枠 */
+.noimg{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:120px;
+  background:var(--tint);border:1px dashed var(--line);color:var(--muted);font-size:13px;text-align:center;padding:10px}
+.noimg--lg{aspect-ratio:4/3;height:auto;border-radius:var(--radius)}
+.noimg--face{aspect-ratio:3/4;height:auto;border-radius:var(--radius);font-weight:700;color:var(--ink)}
+
+/* ---------- 絞り込み ---------- */
+.filters{border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:20px;background:var(--tint)}
+.frow{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+@media(min-width:720px){.frow{flex-direction:row;align-items:center}}
+.frow__lb{font-size:13px;font-weight:700;color:var(--ink);min-width:84px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-family:inherit;font-size:13.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.pill.is-on{background:var(--ink);border-color:var(--ink);color:#fff}
+.hits{margin:4px 0 0;font-size:14px}
+.hits b{font-size:18px;color:var(--ink)}  /* 薄いグレーの上なので、レッドではなくブラック */
+
+/* ---------- 取得の流れ ---------- */
+.steps{counter-reset:none;margin-top:10px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:0 0 22px;position:relative}
+.step::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+.step:last-child::before{display:none}
+.step__no{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:14px}
+.step h3{font-size:17.5px;margin:8px 0 4px}
+
+/* 書類・費用の表 */
+.rows{margin:0;border-top:2px solid var(--ink)}
+.rows__r{display:grid;gap:2px;padding:13px 2px;border-bottom:1px solid var(--line)}
+@media(min-width:640px){.rows__r{grid-template-columns:220px 1fr;gap:18px}}
+.rows dt{font-weight:700;color:var(--ink)}
+.rows dd{margin:0}
+.rows--plain{border-top:0}
+
+/* ---------- サービス ---------- */
+.svcs{display:grid;gap:14px}
+@media(min-width:720px){.svcs{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svcs{grid-template-columns:repeat(3,1fr)}}
+.svc{border:1px solid var(--line);border-top:4px solid var(--ink);border-radius:var(--radius);padding:18px}
+.svc h3{font-size:17.5px;margin-bottom:6px}
+
+/* ---------- 物件の詳細 ---------- */
+.pdetail{display:grid;gap:28px}
+@media(min-width:900px){.pdetail{grid-template-columns:1.25fr 1fr;align-items:start}}
+.slider{position:relative;border-radius:var(--radius);overflow:hidden;background:#000}
+.slider__track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.slider__track::-webkit-scrollbar{display:none}
+.slider__item{flex:0 0 100%;scroll-snap-align:start;margin:0;aspect-ratio:4/3}
+.slider__item img{width:100%;height:100%;object-fit:cover}
+.slider__btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;
+  background:rgba(255,255,255,.9);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+.slider__btn--prev{left:8px}
+.slider__btn--next{right:8px}
+.slider__count{position:absolute;right:10px;bottom:8px;margin:0;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:2px 8px;border-radius:999px}
+.spec{width:100%;border-collapse:collapse;border-top:2px solid var(--ink)}
+.spec th,.spec td{text-align:left;vertical-align:top;padding:11px 6px;border-bottom:1px solid var(--line);font-size:15px}
+.spec th{width:38%;color:var(--ink);font-weight:700}
+.spec small{color:var(--muted)}
+.map{aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+/* ---------- 運営者 ---------- */
+.people{display:grid;gap:22px}
+@media(min-width:880px){.people{grid-template-columns:1fr 1fr}}
+.person{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+@media(min-width:880px){.person{grid-template-columns:170px 1fr}}
+.person__ph img,.person__ph .noimg{aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:8px}
+.person__role{font-size:13px;color:var(--red);font-weight:700;margin-bottom:2px}
+
+/* ---------- お問い合わせ ---------- */
+.contact{display:grid;gap:30px}
+@media(min-width:900px){.contact{grid-template-columns:1.3fr 1fr;align-items:start}}
+.contact__form{border:1px solid var(--line);border-radius:var(--radius);padding:20px 16px}
+.field{margin:0 0 16px}
+.field label{display:block;font-weight:700;font-size:14.5px;margin-bottom:5px;color:var(--ink)}
+.field label i{font-style:normal;font-size:11px;background:var(--red);color:#fff;border-radius:3px;padding:1px 6px;margin-left:8px;font-weight:400;vertical-align:1px}
+.field input,.field textarea,.field select{width:100%;font-family:inherit;font-size:16px;line-height:1.6;
+  border:1px solid #BDBDBD;border-radius:6px;padding:11px 12px;background:#fff;color:var(--ink)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--red);outline-offset:0;border-color:var(--red)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fmsg{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:14.5px}
+.fmsg.ok{background:var(--tint);border:1px solid var(--line);border-left:5px solid var(--ink);color:var(--ink)}
+.fmsg.ng{background:#FDECEC;border:1px solid #F5C2C2;color:#A3000C}
+
+/* メッセンジャーのボタン。URLが入っているものだけ出ます */
+.msgr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.msgr__btn{display:block;text-align:center;text-decoration:none;color:var(--ink);font-weight:700;padding:12px 8px;border-radius:8px;border:2px solid var(--ink);background:#fff}
+.msgr__btn:hover{background:var(--ink);color:#fff}
+
+/* ---------- フッター ---------- */
+.foot{background:var(--ink);color:#C8C8C8;padding:40px 0 26px;font-size:14px}
+.foot a{color:#fff}
+.foot__grid{display:grid;gap:24px}
+@media(min-width:760px){.foot__grid{grid-template-columns:1.4fr 1fr}}
+.foot__brand{color:#fff;font-weight:700;font-size:17px;margin-bottom:0}
+.foot__sub{font-size:12.5px;margin-bottom:10px}
+.foot__partner{font-size:13px}
+.foot__nav{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.foot__nav a{text-decoration:none}
+.foot__langs{margin-top:14px;display:flex;gap:14px}
+.foot__note{margin-top:26px;padding-top:18px;border-top:1px solid #3A3A3A;font-size:12.5px;line-height:1.8}
+.foot__copy{margin-top:14px;font-size:12px;color:#9E9E9E}
+
+/* ---------- 最後の呼びかけ ---------- */
+.closing p{color:#EDEDED;margin-bottom:22px}

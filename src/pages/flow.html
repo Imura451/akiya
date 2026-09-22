@@ -1,0 +1,61 @@
+<!-- ============================ 取得の流れと費用 ============================ -->
+
+<section class="phead">
+  <div class="wrap">
+    <h1 class="h1">{{t.flow.title}}</h1>
+    <p class="lead">{{t.flow.lead}}</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap narrow">
+    <h2 class="h2">{{t.flow.stepsTitle}}</h2>
+    <ol class="steps">
+      {{#t.flow.steps}}
+      <li class="step">
+        <span class="step__no" aria-hidden="true">{{no}}</span>
+        <div>
+          <h3>{{title}}</h3>
+          <p>{{text}}</p>
+        </div>
+      </li>
+      {{/t.flow.steps}}
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="documents">
+  <div class="wrap narrow">
+    <h2 class="h2">{{t.flow.docsTitle}}</h2>
+    <p class="lead">{{t.flow.docsLead}}</p>
+    <dl class="rows">
+      {{#t.flow.docs}}<div class="rows__r"><dt>{{name}}</dt><dd>{{text}}</dd></div>
+      {{/t.flow.docs}}
+    </dl>
+    <p class="note">※ {{t.flow.docsNote}}</p>
+  </div>
+</section>
+
+<section class="sec" id="costs">
+  <div class="wrap narrow">
+    <h2 class="h2">{{t.flow.costTitle}}</h2>
+    <dl class="rows">
+      {{#t.flow.costs}}<div class="rows__r"><dt>{{name}}</dt><dd>{{text}}</dd></div>
+      {{/t.flow.costs}}
+    </dl>
+    <p class="note">※ {{t.flow.costNote}}</p>
+
+    <h2 class="h2 mt">{{t.flow.afterTitle}}</h2>
+    <dl class="rows">
+      {{#t.flow.after}}<div class="rows__r"><dt>{{name}}</dt><dd>{{text}}</dd></div>
+      {{/t.flow.after}}
+    </dl>
+    <p class="note">※ {{t.flow.taxNote}}</p>
+
+    <p class="center mt">
+      <a class="btn btn--cta" href="{{root}}{{lang}}/contact.html">
+        {{t.common.ctaConsult}}<small>{{t.common.ctaConsultSub}}</small>
+      </a>
+    </p>
+  </div>
+</section>

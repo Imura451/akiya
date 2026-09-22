@@ -1,0 +1,68 @@
+<!-- ============================ 物件一覧 ============================ -->
+
+<section class="phead">
+  <div class="wrap">
+    <h1 class="h1">{{t.props.title}}</h1>
+    <p class="lead">{{t.props.lead}}</p>
+  </div>
+</section>
+
+<section class="sec sec--top0">
+  <div class="wrap">
+    {{#cards.length}}
+    <!-- 絞り込み。選択肢は、いま載っている物件から自動で作られます -->
+    <div class="filters" id="filters">
+      {{#areaOpts.length}}
+      <div class="frow" data-group="area">
+        <span class="frow__lb">{{t.props.filterArea}}</span>
+        <div class="pills">
+          <button type="button" class="pill is-on" data-v="">{{t.props.all}}</button>
+          {{#areaOpts.list}}<button type="button" class="pill" data-v="{{key}}">{{label}}</button>{{/areaOpts.list}}
+        </div>
+      </div>
+      {{/areaOpts.length}}
+      {{#typeOpts.length}}
+      <div class="frow" data-group="type">
+        <span class="frow__lb">{{t.props.filterType}}</span>
+        <div class="pills">
+          <button type="button" class="pill is-on" data-v="">{{t.props.all}}</button>
+          {{#typeOpts.list}}<button type="button" class="pill" data-v="{{key}}">{{label}}</button>{{/typeOpts.list}}
+        </div>
+      </div>
+      {{/typeOpts.length}}
+      {{#tagOpts.length}}
+      <div class="frow" data-group="tag">
+        <span class="frow__lb">{{t.props.filterTag}}</span>
+        <div class="pills">
+          <button type="button" class="pill is-on" data-v="">{{t.props.all}}</button>
+          {{#tagOpts.list}}<button type="button" class="pill" data-v="{{key}}">{{label}}</button>{{/tagOpts.list}}
+        </div>
+      </div>
+      {{/tagOpts.length}}
+      <!-- 価格帯。区切りの金額は data/settings.json の priceBands にあります -->
+      <div class="frow" data-group="price">
+        <span class="frow__lb">{{t.props.filterPrice}}</span>
+        <div class="pills">
+          <button type="button" class="pill is-on" data-v="">{{t.props.all}}</button>
+          {{#priceOpts}}<button type="button" class="pill" data-v="{{key}}" data-min="{{min}}" data-max="{{max}}">{{label}}</button>{{/priceOpts}}
+        </div>
+      </div>
+      <div class="frow" data-group="yield">
+        <span class="frow__lb">{{t.props.filterYield}}</span>
+        <div class="pills">
+          <button type="button" class="pill is-on" data-v="">{{t.props.all}}</button>
+          {{#t.props.yieldBands}}<button type="button" class="pill" data-v="{{key}}">{{label}}</button>{{/t.props.yieldBands}}
+        </div>
+      </div>
+      <p class="hits">{{t.props.hitsBefore}}<b id="hits">{{cards.length}}</b> {{t.props.hitsAfter}}</p>
+    </div>
+
+    <div class="pgrid" id="pgrid">{{&cards.html}}</div>
+    <p class="empty" id="pempty" hidden>{{t.props.empty}}</p>
+    {{/cards.length}}
+
+    {{^cards.length}}<p class="empty">{{t.props.none}}</p>{{/cards.length}}
+
+    {{#hasVnd}}<p class="note">※ {{t.props.vndNote}}（{{exchange.asOf}}）</p>{{/hasVnd}}
+  </div>
+</section>
