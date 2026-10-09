@@ -331,6 +331,11 @@ function main() {
         label: t.nav[NAV_LABEL[p.key]], href: root + L + '/' + p.file, current: p.key === pageKey
       }));
       const footerItems = navItems.concat([{ label: t.nav.contact, href: root + L + '/contact.html' }]);
+      /* トップの写真に写っている順（左から）。data/settings.json の duoLeftToRight で決めます */
+      const duoOrder = list => {
+        const order = settings.duoLeftToRight || [];
+        return order.length ? order.map(k => list.find(pp => pp.key === k)).filter(Boolean) : list;
+      };
       const peopleView = (t.about.people || []).map(pp => {
         const file = path.join(ASSET_DIR, 'people', pp.key + '.jpg');
         return Object.assign({}, pp, { photo: fs.existsSync(file) ? root + 'assets/people/' + pp.key + '.jpg' : '' });
@@ -356,7 +361,7 @@ function main() {
         people: peopleView,
         /* 2人で写った写真（assets/people/duo.jpg）があれば、トップでは1枚で見せます */
         duoPhoto: fs.existsSync(path.join(ASSET_DIR, 'people', 'duo.jpg')) ? root + 'assets/people/duo.jpg' : '',
-        duoCaption: t.home.duoFromLeft + ' ' + peopleView.map(pp => L === 'ja' ? pp.name + '（' + pp.role + '）' : pp.name + ' (' + pp.role + ')').join(L === 'ja' ? '、' : ', '),
+        duoCaption: t.home.duoFromLeft + ' ' + duoOrder(peopleView).map(pp => L === 'ja' ? pp.name + '（' + pp.role + '）' : pp.name + ' (' + pp.role + ')').join(L === 'ja' ? '、' : ', '),
         messengers: { length: mlist.length, list: mlist },
         isVi: L === 'vi', isJa: L === 'ja', isEn: L === 'en',
         year: THIS_YEAR,

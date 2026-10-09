@@ -167,7 +167,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 /* 2人で写った1枚の写真。いまの写真は幅282pxと小さいので、420pxより大きくは広げません
    （プロの写真に差し替えたら、この上限は外して構いません） */
-.duo1{margin:0 auto;max-width:420px}
+.duo1{margin:0 auto;max-width:none}
 .duo1 img{width:100%;border-radius:var(--radius)}
 .duo1 figcaption{margin-top:10px;font-size:13.5px;color:#C8C8C8}
 .duo__p{margin:0}

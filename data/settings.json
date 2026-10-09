@@ -31,6 +31,8 @@
     "line": "https://line.me/ti/p/-yHHVfak1D",
     "note": "URLが空のボタンは表示しません。zalo は https://zalo.me/電話番号、whatsapp は https://wa.me/81で始まる番号、messenger は https://m.me/ページ名 の形です"
   },
+  "duoLeftToRight": ["huong", "imura"],
+  "duoLeftToRightNote": "トップの写真（assets/people/duo.jpg）に、左から誰が写っているか。写真を替えて並びが変わったら、ここも直します",
   "videos": {
     "concept": "",
     "about": "",
